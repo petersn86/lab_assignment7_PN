@@ -18,12 +18,6 @@ export default function Page() {
             <strong>Welcome to Cool Dogs.</strong> This is the place to find pictures of cool dogs{' '}
             , brought to you by Peter Nolan.
           </p>
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-          >
-            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
@@ -43,6 +37,37 @@ export default function Page() {
           />
         </div>
       </div>
+      <section id="showcase">
+        <div className="container">
+          <h1><strong>Hub for All Things Awesome & Canine</strong></h1>
+          <p>Are you in search of the ultimate paw-some content to elevate your projects, social media, or personal collection? Look no further! Introducing our curated selection of the coolest canine companions you'll ever lay eyes on.</p>
+        </div>
+      </section>
+      <section id="boxes">
+        <div className="container">
+          <div className="box">
+            <Image src="/dog_stylish.png" width={300} height={200} alt="Dogs with stylish outfits" />
+            <p className={`${lusitana.className}text-xl text-gray-800 md:text-3xl md:leading-normal`}>
+            <h3>Dogs with stylish outfits</h3>
+            </p>
+            <p>Are you ready to take your furry friend's fashion game to the next level? Step into the world of canine couture and discover a realm where style meets wagging tails! Introducing our definitive library to dogs wearing cool outfits – because why should humans have all the fun?</p>
+          </div>
+          <div className="box">
+            <Image src="/dog_surfing.png" width={300} height={200} alt="Dogs doing cool things" />
+            <p className={`${lusitana.className}text-xl text-gray-800 md:text-3xl md:leading-normal`}>
+            <h3>Dogs doing cool things</h3>
+            </p>
+            <p>Prepare to be amazed as we delve into the world of dogs doing cool things – because these remarkable canines are not just man's best friend; they're also masters of awesomeness! </p>
+          </div>
+          <div className="box">
+            <Image src="/dog_motorcycle.png" width={300} height={200} alt="Dogs up to NO GOOD" />
+            <p className={`${lusitana.className}text-xl text-gray-800 md:text-3xl md:leading-normal`}>
+            <h3>Dogs up to NO GOOD</h3>
+            </p>
+            <p>A peek into the mischievous world of our furry friends when they think nobody's watching! While dogs are often seen as angels on four legs, behind those innocent eyes and wagging tails lies a mischievous streak that can lead to hilariously naughty behavior.</p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
